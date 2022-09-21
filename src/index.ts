@@ -12,21 +12,18 @@ import promptSync from 'prompt-sync'
 const prompt = promptSync()
 // let ageNumber: number
 
-const logLengthsString = prompt('What is log lengths?(choose 1 of 3: 0.25m, 0.5m, 1m) ')
+const logLengthsString = prompt(
+  'What is log lengths?(choose 1 of 3: 0.25m, 0.5m, 1m) ',
+)
 let logLengthsNumber = parseInt(logLengthsString)
-let logG = 20/logLengthsNumber
-if (logLengthsNumber = 0.25)
-{
-	let logsNumber = 1100/logG
-	console.log(`logsNumber  ${logsNumber}`)
-}
-else if (logLengthsNumber = 0.5)
-{
-	let logsNumber = 1100/logG
-	console.log(`logsNumber ${logsNumber}`)
-}
-else
-{
-	console.log(`-----`)
+let logG = 20 / logLengthsNumber
+if ((logLengthsNumber = 0.25)) {
+  let logsNumber = 1100 / logG
+  console.log(`logsNumber  ${logsNumber}`)
+} else if ((logLengthsNumber = 0.5)) {
+  let logsNumber = 1100 / logG
+  console.log(`logsNumber ${logsNumber}`)
+} else {
+  console.log(`-----`)
 }
 console.log('\nDone.')
